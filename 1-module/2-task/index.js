@@ -1,7 +1,7 @@
 /**
  * Эту функцию трогать не нужно
  */
-function print(text) {
+ function print(text) {
   console.log(text);
 }
 
@@ -10,8 +10,9 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  if (name != "" && name !== "  " && name.length >= 4) {
+  if (name != "" && !/\s/.test(name) && name.length >= 4) {
     console.log("Yes");
+    return name;
   }
   else{
     console.log("No");
@@ -20,7 +21,7 @@ function isValid(name) {
     // string is invalid
  } 
 }
-isValid("Вася ");
+isValid("Ваcя");
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
