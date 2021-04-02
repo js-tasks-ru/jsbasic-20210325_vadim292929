@@ -1,9 +1,15 @@
 function ucFirst(str) {
-  if(!str){
-    return str;
-  }
-  let a = str[0].toUpperCase() + str.slice(1);
+  if (str != "") {
+    let a = str.charAt(0).toUpperCase() + str.slice(1);
 
-  console.log(a);
+    return a;
+
+  } else {
+
+    return str;
+
+  }
+  
 }
-ucFirst("ffcz");
+
+console.log(ucFirst(""));

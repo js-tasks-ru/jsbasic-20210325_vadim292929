@@ -10,18 +10,18 @@
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  if (name != "" && !/\s/.test(name) && name.length >= 4) {
+  if (name != "" && !/\s/.test(name)&& name != null && name.length >= 4) {
     console.log("Yes");
-    return name;
+    return true;
   }
   else{
     console.log("No");
+    return false;
+
   }
-  if ($.trim(val).length === 0){
-    // string is invalid
- } 
 }
-isValid("Ваcя");
+
+console.log(isValid(null));
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
