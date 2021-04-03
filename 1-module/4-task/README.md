@@ -5,7 +5,7 @@
 Функция должна быть нечувствительна к регистру:
 
 ```js
-checkSpam('1XbeT now') === true
-checkSpam('free xxxxx') === true
-checkSpam('innocent rabbit') === false
+checkSpam("1XbeT now") === true;
+checkSpam("free xxxxx") === true;
+checkSpam("innocent rabbit") === false;
 ```
